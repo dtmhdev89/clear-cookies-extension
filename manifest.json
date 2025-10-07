@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Cookie Cleaner",
+    "version": "1.0.0",
+    "description": "Clear all cookies for the current site or all sites with one click. Simple and effective cookie management tool.",
+    "author": "Dinh Tran Minh Hieu",
+    "permissions": [
+        "cookies",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Cookie Cleaner",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "homepage_url": "https://github.com/yourusername/cookie-cleaner"
+}

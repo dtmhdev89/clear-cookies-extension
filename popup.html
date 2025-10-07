@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+            width: 300px;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            }
+            
+            h2 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            color: #333;
+            }
+            
+            .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            }
+            
+            button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            }
+            
+            #clearCurrentSite {
+            background: #e74c3c;
+            color: white;
+            }
+            
+            #clearCurrentSite:hover {
+            background: #c0392b;
+            }
+            
+            #clearAllSites {
+            background: #3498db;
+            color: white;
+            }
+            
+            #clearAllSites:hover {
+            background: #2980b9;
+            }
+            
+            #status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            text-align: center;
+            display: none;
+            }
+            
+            #status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            }
+            
+            #status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            }
+            
+            .info {
+            margin-top: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #666;
+            }
+            
+            .cookie-count {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>🍪 Cookie Cleaner</h2>
+        
+        <div class="cookie-count" id="cookieCount">Loading...</div>
+        
+        <div class="button-group">
+            <button id="clearCurrentSite">Clear Current Site Cookies</button>
+            <button id="clearAllSites">Clear All Cookies</button>
+        </div>
+        
+        <div id="status"></div>
+        
+        <div class="info">
+            ⚠️ This will log you out of websites
+        </div>
+        
+        <script src="popup.js"></script>
+    </body>
+</html>
